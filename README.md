@@ -2,7 +2,7 @@
 
 [![skills.sh](https://skills.sh/b/aryankeluskar/skills)](https://skills.sh/aryankeluskar/skills)
 
-Public collection of agent skills by [@aryankeluskar](https://github.com/aryankeluskar).
+Public collection of agent skills by [@aryankeluskar](https://github.com/aryankeluskar)
 
 Install one with the [skills CLI](https://skills.sh):
 
