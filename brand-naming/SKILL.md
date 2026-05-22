@@ -1,9 +1,9 @@
 ---
-name: placek-naming
-description: "Generate brand, product, company, project, or feature name candidates using David Placek's (Lexicon Branding) methodology — the same process behind Sonos, Pentium, Blackberry, Powerbook, Swiffer, Vercel, Windsurf, CapCut, and Azure. Use when the user asks to name a product, company, startup, library, feature, project, app, AI agent, or codebase; says things like 'help me name X', 'name ideas for Y', 'brainstorm names', 'rename this', 'what should we call it'; or wants to evaluate an existing name candidate. Two modes — QUICK (one-shot generator, ~50 candidates with rationales) and FULL (guided multi-phase workflow covering the Diamond exercise, disguised-brief generation, polarization/fluency screening, and a shortlist with prototypes). Skip for variable/function/file naming (this is brand-level, not code-symbol naming) unless the user explicitly wants brand treatment."
+name: brand-naming
+description: "Brand naming, product naming, company naming, startup naming, app naming, AI agent naming, feature naming, project naming, codebase naming, rename / rebrand assistance, and name evaluation — a full name-generator workflow grounded in David Placek's (Lexicon Branding) methodology, the same process behind Sonos, Pentium, Blackberry, Powerbook, Swiffer, Vercel, Windsurf, CapCut, and Azure. Use when the user asks to name, rename, brand, or rebrand anything; says things like 'help me name X', 'name ideas for Y', 'brainstorm names', 'come up with a name', 'rename this', 'what should we call it', 'pick a brand name', 'startup name ideas', 'product name suggestions', 'naming workshop', 'name this thing'; or wants to evaluate / pressure-test an existing name candidate against trademark sanity, processing fluency, polarization, and sound symbolism. Two modes — QUICK (one-shot generator, ~50 candidates with rationales across coined/compound/metaphor/cross-domain buckets) and FULL (guided multi-phase workshop covering the Diamond exercise, disguised-brief generation, polarization/fluency screening, and a stakeholder-ready shortlist with prototypes). Skip for variable/function/file/symbol naming inside code (this is brand-level, not identifier naming) unless the user explicitly wants brand treatment."
 ---
 
-# Placek Naming
+# Brand Naming (Placek Methodology)
 
 This skill encodes David Placek's naming methodology (Lexicon Branding, ~4000 projects, 40+ years). Use it whenever the user wants to invent a brand-level name.
 

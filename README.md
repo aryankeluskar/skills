@@ -18,18 +18,18 @@ npx skills add aryankeluskar/skills -g --all
 
 ## Available skills
 
-### [`placek-naming`](./placek-naming)
+### [`brand-naming`](./brand-naming)
 
-Generate brand, product, company, project, or feature name candidates using David Placek's (Lexicon Branding) methodology — the same process behind Sonos, Pentium, Blackberry, Powerbook, Swiffer, Vercel, Windsurf, CapCut, and Azure.
+Generate brand, product, company, startup, app, AI agent, feature, or project name candidates — grounded in David Placek's (Lexicon Branding) methodology, the same process behind Sonos, Pentium, Blackberry, Powerbook, Swiffer, Vercel, Windsurf, CapCut, and Azure.
 
 Two modes:
-- **Quick** — one-shot generator, ~50 candidates with sound-symbolism rationales.
-- **Full** — guided multi-phase workflow: Diamond exercise → disguised-brief generation → polarization/fluency screening → shortlist with stakeholder rationales.
+- **Quick** — one-shot generator, ~50 candidates across coined/compound/metaphor/cross-domain buckets with sound-symbolism rationales.
+- **Full** — guided multi-phase workshop: Diamond exercise → disguised-brief generation → polarization/fluency screening → stakeholder-ready shortlist with prototypes.
 
 Install:
 
 ```bash
-npx skills add aryankeluskar/skills --skill placek-naming
+npx skills add aryankeluskar/skills --skill brand-naming
 ```
 
 ## License
