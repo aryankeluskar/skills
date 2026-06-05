@@ -32,6 +32,20 @@ Install:
 npx skills add aryankeluskar/skills --skill brand-naming
 ```
 
+### [`fetch-paper`](./fetch-paper)
+
+Fetch an arXiv paper from a URL, arXiv ID, or title. Downloads the LaTeX source into `refs/<Title>/` (stripped of fonts and videos, figures kept as AI context) and the PDF into `papers/<Title> - <arxiv_id>.pdf` — one command, two artifacts.
+
+- Stdlib-only Python 3, no pip installs, idempotent.
+- URL/ID inputs never hit the arXiv API; only a bare-title search does.
+- Flags for `--refs`/`--papers` dirs, `--source-only`, `--pdf-only`, `--yes`.
+
+Install:
+
+```bash
+npx skills add aryankeluskar/skills --skill fetch-paper
+```
+
 ## License
 
 MIT.
