@@ -32,6 +32,19 @@ Install:
 npx skills add aryankeluskar/skills --skill brand-naming
 ```
 
+### [`creativity-rejectionism`](./creativity-rejectionism)
+
+Apply Henry Shevlin's "Strong Rejectionist" methodology (Shevlin 2021, EJPS) to claims that a non-human system — an animal or an AI/LLM — is "really creative" (or insightful, intelligent, understanding, reasoning). Instead of adjudicating the unanswerable "but is it *really* creative?", it redirects you to operationalized, measurable constructs.
+
+- A 5-step procedure: name the smuggled-in criterion, run the hazard checklist (novelty grain, value-ladenness, measurement, serendipity confounds), evaluate rescue strategies, and reframe.
+- Includes guidance for AI/LLM benchmark and eval design: build benchmarks for stipulated sub-capacities, pre-register the individuation grain and value rubric, and treat the folk term as out of scope.
+
+Install:
+
+```bash
+npx skills add aryankeluskar/skills --skill creativity-rejectionism
+```
+
 ### [`fetch-paper`](./fetch-paper)
 
 Fetch an arXiv paper from a URL, arXiv ID, or title. Downloads the LaTeX source into `refs/<Title>/` (stripped of fonts and videos, figures kept as AI context) and the PDF into `papers/<Title> - <arxiv_id>.pdf` — one command, two artifacts.
