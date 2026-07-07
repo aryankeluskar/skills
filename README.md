@@ -18,6 +18,20 @@ npx skills add aryankeluskar/skills -g --all
 
 ## Available skills
 
+### [`add-umami-analytics`](./add-umami-analytics)
+
+Add self-hosted [umami](https://umami.is) analytics plus automatic click/event tracking to any website — no manual tagging. Points at a self-hosted umami fork, creates a new website project, injects the tracking script, and wires detailed event tracking for every `<a>`, `<button>`, `role="button"`, and submit input.
+
+- Auto-detects project type (Next.js App/Pages Router, static HTML, Vite/SPA) and injects the right snippet.
+- Event name is the element's readable label (e.g. `link: Resume`); `href`, `id`, text, and path stored as properties.
+- Includes a helper to create the umami website and return its ID, a React client component, and a vanilla HTML snippet.
+
+Install:
+
+```bash
+npx skills add aryankeluskar/skills --skill add-umami-analytics
+```
+
 ### [`brand-naming`](./brand-naming)
 
 Generate brand, product, company, startup, app, AI agent, feature, or project name candidates — grounded in David Placek's (Lexicon Branding) methodology, the same process behind Sonos, Pentium, Blackberry, Powerbook, Swiffer, Vercel, Windsurf, CapCut, and Azure.
