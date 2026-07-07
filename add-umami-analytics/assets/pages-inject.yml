@@ -1,0 +1,48 @@
+# Copy to .github/workflows/pages.yml in a static GitHub Pages repo.
+# Injects umami config from per-repo Actions variables at deploy time, so the
+# website id lives in the project's environment — a fork without the variable
+# tracks nothing. No domain gating.
+#
+# Setup:
+#   gh variable set UMAMI_WEBSITE_ID --repo <owner/repo> --body "<website-id>"
+#   gh variable set UMAMI_SCRIPT_URL --repo <owner/repo> --body "<script-url>"   # optional; defaults to Umami Cloud
+#   gh api --method PUT repos/<owner/repo>/pages -f build_type=workflow          # switch Pages source to Actions
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inject umami config
+        env:
+          UMAMI_WEBSITE_ID: ${{ vars.UMAMI_WEBSITE_ID }}
+          UMAMI_SCRIPT_URL: ${{ vars.UMAMI_SCRIPT_URL }}
+        run: |
+          SCRIPT_URL="${UMAMI_SCRIPT_URL:-https://cloud.umami.is/script.js}"
+          find . -name '*.html' -not -path './.git/*' -print0 | xargs -0 -r sed -i \
+            -e "s#__UMAMI_WEBSITE_ID__#${UMAMI_WEBSITE_ID}#g" \
+            -e "s#__UMAMI_SCRIPT_URL__#${SCRIPT_URL}#g"
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

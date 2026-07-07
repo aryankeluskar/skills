@@ -1,9 +1,9 @@
-<!-- Umami analytics. Paste before </head>. Replace:
-       SCRIPT_URL   -> your umami script URL (default https://cloud.umami.is/script.js)
-       WEBSITE_ID   -> the site's umami website id
-       PROD_HOSTNAME -> production hostname(s), comma-separated (fork guard: a clone on
-                        another domain sends nothing). Drop data-domains only if intentional. -->
-<script defer src="SCRIPT_URL" data-website-id="WEBSITE_ID" data-domains="PROD_HOSTNAME"></script>
+<!-- Umami analytics. Paste before </head>.
+     Leave the placeholders as-is: src + website id are injected at deploy from the
+     environment (env var, or a GitHub Actions repo variable via pages-inject.yml) so a
+     fork without them tracks nothing. Do NOT gate on domain — umami records hostname on
+     every event for post-hoc filtering. -->
+<script defer src="__UMAMI_SCRIPT_URL__" data-website-id="__UMAMI_WEBSITE_ID__"></script>
 <script>
 (function () {
   var SEL = 'a, button, [role="button"], input[type="submit"], input[type="button"]';
