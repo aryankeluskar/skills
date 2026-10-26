@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: design-doc-cache-intro
+expected_outcome: |
+  A design doc intro that states the proposal first, grounds it in the given numbers, invents no data, and avoids AI filler.

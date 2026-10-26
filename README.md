@@ -32,6 +32,20 @@ Install:
 npx skills add aryankeluskar/skills --skill add-umami-analytics
 ```
 
+### [`amazon-writing`](./amazon-writing)
+
+Write in the plain, data-first style from Amazon's internal "Write Like an Amazonian" guide: sentences under 30 words, numbers instead of adjectives, no weasel words, and every line passes the "so what" test.
+
+- For docs, design docs, status updates, emails, Slack messages, PR descriptions, postmortems, and replies to a manager, including when the ask is only to tighten writing.
+- Uses the numbers the user supplied. When a claim needs a figure they did not give, it leaves a visible gap instead of inventing one.
+- Drops openers, hedges, and filler that make prose sound machine-written.
+
+Install:
+
+```bash
+npx skills add aryankeluskar/skills --skill amazon-writing
+```
+
 ### [`brand-naming`](./brand-naming)
 
 Generate brand, product, company, startup, app, AI agent, feature, or project name candidates — grounded in David Placek's (Lexicon Branding) methodology, the same process behind Sonos, Pentium, Blackberry, Powerbook, Swiffer, Vercel, Windsurf, CapCut, and Azure.
