@@ -73,6 +73,20 @@ Install:
 npx skills add aryankeluskar/skills --skill fetch-paper
 ```
 
+### [`ml-paper-writing`](./ml-paper-writing)
+
+Plan, write, review, and polish machine-learning research papers and their figures. It distills Neel Nanda's *Highly Opinionated Advice on How to Write ML Papers*, the "Behind the scenes of paper writing" post on *Base Models Can Reason By Taking a Cue From Training Data*, and Chengshuai Zhao's *How to Make Good Figures for Scientific Papers*.
+
+- **Story first:** compresses messy notes or results into 1–3 claims, each with its evidence, weakest point, and a confidence level scoped to what was actually tested. Red-teams the claims against controls, baselines, and the closest prior work.
+- **Writing and review:** a sentence-by-sentence abstract plan, an intro paragraph plan, and a review checklist that puts narrative before line edits. It never invents results or citations; anything missing becomes a visible `[RESULT: …]` / `[CITE: …?]` placeholder.
+- **Figures:** each figure is planned around a one-sentence message and the result that would disprove it. A matplotlib helper (`scripts/paper_style.py`) adds the Tailwind v4 palette, venue column widths, emphasis by lightness that survives greyscale, and vector PDF export with TrueType fonts plus a font check.
+
+Install:
+
+```bash
+npx skills add aryankeluskar/skills --skill ml-paper-writing
+```
+
 ## License
 
 MIT.
